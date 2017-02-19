@@ -1,0 +1,49 @@
+import groovy.json.JsonSlurper
+
+def computeVersionName() {
+    // dynamically retrieve version from package.json
+    def slurper = new JsonSlurper()
+    def json = slurper.parse(file('../package.json'), "utf-8")
+    return json.version
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        // get version name from package.json version
+        versionName computeVersionName()
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.facebook.react:react-native:+'
+    // compile ('com.aerisweather:aeris-maps-lib:2.0.0_Beta2@aar') { transitive true }
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    // compile 'com.android.support:appcompat-v7:25.1.0'
+    compile "com.android.support:appcompat-v7:23.+"
+}
