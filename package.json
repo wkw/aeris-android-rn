@@ -4,7 +4,7 @@
   "author": "Wayne K. Walrath <wkw@acmetech.com>",
   "private": false,
   "license": "Unlicense",
-  "description" : "Aeris Weather Maps React Native Android-Native module",
+  "description": "Aeris Weather Maps React Native Android-Native module",
   "repository": {
     "type": "git",
     "url": "https://github.com/wkw/aeris-android-rn.git"
@@ -25,5 +25,9 @@
   },
   "peerDependencies": {
     "react-native": ">=0.40.0"
+  },
+  "dependencies": {
+    "global": "^4.3.1",
+    "react-native-cli": "^2.0.1"
   }
 }

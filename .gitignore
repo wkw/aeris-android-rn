@@ -5,6 +5,8 @@ system-notification.iml
 react-native-system-notification.iml
 .DS_Store
 .idea/
+.gradle
+local.properties
 android/.idea/
 *.iml
 *.sublime-*

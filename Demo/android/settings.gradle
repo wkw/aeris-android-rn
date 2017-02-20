@@ -1,0 +1,6 @@
+rootProject.name = 'Demo'
+include ':aeris-android-rn'
+// project(':aeris-android-rn').projectDir = new File(rootProject.projectDir, '../../android')
+project(':aeris-android-rn').projectDir = new File(rootProject.projectDir, '../node_modules/aeris-android-rn/android')
+
+include ':app'

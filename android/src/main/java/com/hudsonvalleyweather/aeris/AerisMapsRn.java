@@ -1,6 +1,7 @@
 package com.hudsonvalleyweather.aeris;
 
 import android.widget.Toast;
+import android.view.Gravity;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -33,6 +34,9 @@ public class AerisMapsRn extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void show(String message, int duration) {
+    // Toast toast = Toast.makeText(getReactApplicationContext(), message, duration); //.show();
+    // toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
+    // toast.show();
     Toast.makeText(getReactApplicationContext(), message, duration).show();
   }
 }
