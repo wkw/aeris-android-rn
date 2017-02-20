@@ -13,11 +13,12 @@ import {
   Button,
   View,
 } from 'react-native';
-import AerisMapsRn from 'aeris-android-rn';
+// import AerisMapsRn from 'aeris-android-rn';
+import AerisMapsRn from './AerisMapsRn';
 
 export default class Demo extends Component { // eslint-disable-line react/prefer-stateless-function
   static onButtonPress() {
-    AerisMapsRn.show('AerisMapsRn runs fine', AerisMapsRn.LONG);
+    AerisMapsRn.show('AerisMapsRn runs fine', null); // AerisMapsRn.LONG
   }
 
   render() {
