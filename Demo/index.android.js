@@ -18,7 +18,7 @@ import AerisMapsRn from './AerisMapsRn';
 
 export default class Demo extends Component { // eslint-disable-line react/prefer-stateless-function
   static onButtonPress() {
-    AerisMapsRn.show('AerisMapsRn runs fine', null); // AerisMapsRn.LONG
+    AerisMapsRn.show('AerisMapsRn: Rock-n-Roll !', AerisMapsRn.SHORT);
   }
 
   render() {
