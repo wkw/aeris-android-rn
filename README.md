@@ -1,7 +1,7 @@
 React Native Android Module for Aeris Weather Maps SDK
 ======================================================
 
-Word in progress to setup the RN Android Native Module, currently only shows an Android Toast.
+Work in progress to setup the RN Android Native Module, currently only shows an Android Toast.
 However Aeris SDK is linked in, in prep. for next steps.
 
 ### Install:
