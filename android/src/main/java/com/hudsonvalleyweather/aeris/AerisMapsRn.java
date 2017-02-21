@@ -34,9 +34,9 @@ public class AerisMapsRn extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void show(String message, int duration) {
-    // Toast toast = Toast.makeText(getReactApplicationContext(), message, duration); //.show();
-    // toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);
-    // toast.show();
-    Toast.makeText(getReactApplicationContext(), message, duration).show();
+    // Toast.makeText(getReactApplicationContext(), message, duration).show();
+    Toast toast = Toast.makeText(getReactApplicationContext(), message, duration);
+    // toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
+    toast.show();
   }
 }
