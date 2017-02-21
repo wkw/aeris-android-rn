@@ -19,7 +19,7 @@ import AerisMapsRn from 'aeris-android-rn';
 export default class Demo2 extends Component { // eslint-disable-line react/prefer-stateless-function
 
   static onButtonPress() {
-    AerisMapsRn.show('AerisMapsRn ** Rock-n-Roll !', AerisMapsRn.SHORT);
+    AerisMapsRn.show('AerisMapsRn *!* Rock-n-Roll !', AerisMapsRn.SHORT);
   }
 
   render() {

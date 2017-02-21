@@ -31,3 +31,8 @@ import AerisMapsRn from 'aeris-android-rn';
     );
   }
 ```
+
+--------------------------------------------------------------
+
+- Demo app relies on module java sources being part of the app.
+- Demo2 uses installed/linked package in node_modules.

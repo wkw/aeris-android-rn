@@ -19,6 +19,10 @@ public class AerisMapsRn extends ReactContextBaseJavaModule {
     super(reactContext);
   }
 
+  public Activity getActivity() {
+    return getCurrentActivity();
+  }
+
   @Override
   public String getName() {
     return "AerisMapsRn";
