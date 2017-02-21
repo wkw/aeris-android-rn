@@ -11,6 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 import android.util.Log;
 
+/**
+ * getCurrentActivity()
+ */
 public class AerisMapsRn extends ReactContextBaseJavaModule {
 
   private static final String TAG = AerisMapsRn.class.getSimpleName();
