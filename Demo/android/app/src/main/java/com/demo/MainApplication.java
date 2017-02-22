@@ -1,5 +1,7 @@
 package com.demo;
 
+import com.demo.R;
+
 import android.app.Application;
 import android.util.Log;
 
@@ -16,6 +18,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
+
+  // private static final String TAG = MainApplication.class.getSimpleName();
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override

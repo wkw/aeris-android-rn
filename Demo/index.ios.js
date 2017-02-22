@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define, react/prefer-stateless-function */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -9,7 +10,7 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 
 export default class Demo extends Component {

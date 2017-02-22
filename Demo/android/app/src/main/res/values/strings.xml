@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Demo</string>
+    <string name="aerisapi_client_id">gn4gDSYVriKo8umbkMm5v</string>
+    <string name="aerisapi_client_secret">HkefIkKvNTOJTIZYxXuU5189TuyNpCo8ShC1uw7A</string>
 </resources>
